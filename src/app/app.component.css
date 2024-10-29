@@ -1,0 +1,26 @@
+/* .top-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+   */
+   .top-container {
+    display: flex;
+    justify-content: space-around; /* Space components evenly across */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between components */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 350px;
+    color: aliceblue;
+  }
+  
+    

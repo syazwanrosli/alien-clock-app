@@ -1,0 +1,18 @@
+<div class="set-alarm-container">
+<div class="set-alarm">
+  <h2>Set Alarm</h2>
+  <form (ngSubmit)="setAlarm()">
+    <label>Year: <input type="number" [(ngModel)]="alienTime.year" name="year"></label>
+    <label>Month: <input type="number" [(ngModel)]="alienTime.month" name="month"></label>
+    <label>Day: <input type="number" [(ngModel)]="alienTime.day" name="day"></label>
+    <label>Hour: <input type="number" [(ngModel)]="alienTime.hour" name="hour"></label>
+    <label>Minute: <input type="number" [(ngModel)]="alienTime.minute" name="minute"></label>
+    <label>Second: <input type="number" [(ngModel)]="alienTime.second" name="second"></label>
+    <button type="submit">Set Alarm</button>
+  </form>
+
+  <div *ngIf="alarmSetMessage">
+    <p>{{ alarmSetMessage }}</p>
+  </div>
+</div>
+</div>

@@ -1,0 +1,36 @@
+.left-container {
+  margin: 0;
+  width: 100%; /* Responsive width within the container */
+  display: flex;
+  justify-content: center; /* Center the component horizontally */
+  opacity: 80%;
+}
+
+.alien-clock {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0;
+  border-radius: 8px;
+  width: 400px; /* Max width for each component */
+  height: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align items to the start (left) */
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center; /* Center the heading */
+}
+
+p {
+  margin: 10px 0; /* Space between each property */
+}
+
+strong {
+  display: inline-block; /* Ensure strong elements align neatly */
+  width: 80px; /* Set a fixed width to align labels and values */
+}

@@ -1,0 +1,19 @@
+<div class="convert-container">
+<div class="convert-to-earth">
+  <h2>Convert Alien Time to Earth Time</h2>
+  <form (ngSubmit)="convertToEarth()">
+    <label>Year: <input type="number" [(ngModel)]="alienTime.year" name="year"></label>
+    <label>Month: <input type="number" [(ngModel)]="alienTime.month" name="month"></label>
+    <label>Day: <input type="number" [(ngModel)]="alienTime.day" name="day"></label>
+    <label>Hour: <input type="number" [(ngModel)]="alienTime.hour" name="hour"></label>
+    <label>Minute: <input type="number" [(ngModel)]="alienTime.minute" name="minute"></label>
+    <label>Second: <input type="number" [(ngModel)]="alienTime.second" name="second"></label>
+    <button type="submit">Convert</button>
+  </form>
+
+  <div *ngIf="earthTime">
+    <h3>Converted Earth Time</h3>
+    <p>{{ earthTime | date:'yyyy-MM-dd HH:mm:ss' }}</p>
+  </div>
+</div>
+</div>
